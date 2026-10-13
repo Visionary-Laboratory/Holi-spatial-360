@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Holi-Spatial 360: Generative Reconstruction from Sparse Panoramas for Spatial Rendering and Intelligence. Explore video results and method comparisons.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Holi-Spatial 360 — Spatial Rendering and Intelligence</title>
+  <link rel="icon" href="assets/site/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site/style.css">
+  <script src="assets/site/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to video comparisons</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Holi-Spatial 360 home"><span class="orbit" aria-hidden="true"><i></i></span>Holi-Spatial <span class="wordmark-degree">360</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#results">Results</a><a href="#framework">Framework</a>
+      <a class="nav-repo" href="https://github.com/Visionary-Laboratory/Holi-spatial-360" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="project-title">
+      <p class="eyebrow"><span class="tiny-orbit" aria-hidden="true">◉</span> From sparse panoramas to spatial worlds</p>
+      <h1 id="project-title">Holi-Spatial <em>360</em><span class="title-dot">.</span></h1>
+      <p class="paper-title">Generative Reconstruction from Sparse Panoramas<br class="desktop-break"> for Spatial Rendering and Intelligence</p>
+      <div class="hero-links"><a class="button primary" href="#results">Explore the results <span aria-hidden="true">↓</span></a><a class="button secondary" href="assets/framework.pdf" target="_blank" rel="noopener">View framework <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-rule"><span>RECONSTRUCT</span><i></i><span>RENDER</span><i></i><span>UNDERSTAND</span></div>
+    </section>
+
+    <section class="results wrap section" id="results" aria-labelledby="results-title">
+      <div class="section-top"><div><p class="eyebrow">01 / Visual results</p><h2 id="results-title">A closer look, <em>from every view.</em></h2></div><p class="section-intro">Explore four cases along matched camera paths.<br>Choose a baseline and compare in motion.</p></div>
+      <div id="scene-tabs" class="scene-tabs" aria-label="Choose a video case">
+        <button class="scene-tab active" type="button" data-case="0" aria-pressed="true"><img src="assets/posters/case01_realsee_12s/ours.jpg" alt="" width="72" height="72"><span><small>01 / REALSEE</small><strong>Indoor collection</strong><span class="scene-duration">3 clips · 9 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+        <button class="scene-tab" type="button" data-case="1" aria-pressed="false"><img src="assets/posters/case02_ziroom_microwave/ours.jpg" alt="" width="72" height="72"><span><small>02 / ZIROOM</small><strong>Apartment walkthrough</strong><span class="scene-duration">1 route · 4.67 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+        <button class="scene-tab" type="button" data-case="2" aria-pressed="false"><img src="assets/posters/case03_realsee_scene00506_6s/ours.jpg" alt="" width="72" height="72"><span><small>03 / REALSEE</small><strong>Living space</strong><span class="scene-duration">2 clips · 6 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+        <button class="scene-tab" type="button" data-case="3" aria-pressed="false"><img src="assets/posters/case04_ziroom_20te_6s/ours.jpg" alt="" width="72" height="72"><span><small>04 / ZIROOM</small><strong>Bedroom & passage</strong><span class="scene-duration">2 clips · 6 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+      </div>
+
+      <div class="reference-strip" aria-labelledby="reference-title">
+        <div class="reference-intro"><p class="eyebrow">Sparse observations</p><h3 id="reference-title">Input panoramas</h3><p>Two example references</p><span id="reference-context">Opening clip · Scene 00028</span></div>
+        <div class="reference-pair">
+          <figure><a id="panorama-link-1" href="assets/panoramas/case01_realsee_12s/pano16.jpg" target="_blank" rel="noopener" aria-label="Open full panorama 16"><img id="panorama-image-1" src="assets/panoramas/case01_realsee_12s/pano16.jpg" alt="Input panorama 16 from Realsee scene 00028" width="1600" height="800" loading="lazy"></a><figcaption><span id="panorama-label-1">Panorama 16</span><span aria-hidden="true">↗</span></figcaption></figure>
+          <figure><a id="panorama-link-2" href="assets/panoramas/case01_realsee_12s/pano00.jpg" target="_blank" rel="noopener" aria-label="Open full panorama 00"><img id="panorama-image-2" src="assets/panoramas/case01_realsee_12s/pano00.jpg" alt="Input panorama 00 from Realsee scene 00028" width="1600" height="800" loading="lazy"></a><figcaption><span id="panorama-label-2">Panorama 00</span><span aria-hidden="true">↗</span></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="comparison-toolbar">
+        <div class="mode-switch" aria-label="Comparison layout"><button class="selected" type="button" data-mode="side" aria-pressed="true"><span aria-hidden="true">▥</span> Side by side</button><button type="button" data-mode="wipe" aria-pressed="false"><span aria-hidden="true">◧</span> Slider</button></div>
+        <div class="baseline-picker"><label for="baseline">Compare with</label><select id="baseline">
+          <optgroup label="Baselines"><option value="3dgs">3DGS</option><option value="difix">DiFix</option><option value="panoworld">PanoWorld</option><option value="artifixer">ArtiFixer</option><option value="gsfixer-repair">GSFixer</option></optgroup>
+        </select></div>
+      </div>
+
+      <div id="comparison" class="comparison" data-mode="side" aria-label="Synchronized video comparison">
+        <div class="video-panel ours-panel"><div class="panel-label"><span><i></i> Holi-Spatial 360</span><span class="method-tag">Ours</span></div><video id="ours-video" muted playsinline preload="auto" aria-label="Holi-Spatial 360 result"></video></div>
+        <div class="video-panel baseline-panel"><div class="panel-label"><span id="baseline-label">3DGS</span><span id="baseline-tag" class="method-tag">Baseline</span></div><video id="baseline-video" muted playsinline preload="auto" aria-label="Baseline result"></video></div>
+        <div class="wipe-control" hidden><div class="wipe-line" aria-hidden="true"><span>↔</span></div><input type="range" id="wipe-range" min="0" max="100" value="50" aria-label="Move comparison divider"></div>
+        <div id="video-status" class="video-status" role="status" aria-live="polite">Loading videos…</div>
+      </div>
+      <div class="playback-controls">
+        <button id="play-toggle" class="play-button" type="button" aria-label="Play both videos" disabled><span id="play-icon" aria-hidden="true">▶</span><span id="play-label">Play</span></button>
+        <button id="restart" class="icon-button" type="button" title="Restart videos" aria-label="Restart both videos">↺</button>
+        <span id="current-time" class="time">0:00</span><input id="timeline" class="timeline" type="range" min="0" max="1000" value="0" step="1" aria-label="Video playback position"><span id="duration" class="time">0:09</span>
+        <select id="speed" aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select>
+        <button id="fullscreen" class="icon-button" type="button" aria-label="Full screen comparison" title="Full screen">⛶</button>
+      </div>
+      <div class="comparison-caption"><span id="case-caption">Three indoor scenes. Cuts between the 3-second clips are intentional.</span><a id="open-video" href="assets/videos/case01_realsee_12s/ours.mp4" target="_blank" rel="noopener">Open our video <span aria-hidden="true">↗</span></a></div>
+      <details class="comparison-notes"><summary>About these comparisons <span>Qualitative results · matched cameras · different native inputs</span></summary><div class="notes-body"><p>These videos follow the same camera paths within each case. Native inputs, reference budgets, and training conditions differ across methods, so these are qualitative demonstrations rather than an equal-input benchmark.</p><p><strong>Baselines.</strong> Released DiFix and ArtiFixer operate on the independent, real-RGB-only 3DGS result. PanoWorld uses its own panorama-based reconstruction. GSFixer also operates on the independent 3DGS result.</p><p>The two panorama examples show representative source observations, not the full reference set for each method. Ziroom examples are the supplied full-panorama reprojections of the original cube faces.</p><p id="case-note"></p></div></details>
+    </section>
+
+    <section class="framework-section section" id="framework" aria-labelledby="framework-title"><div class="wrap">
+      <div class="section-top"><div><p class="eyebrow">02 / The framework</p><h2 id="framework-title">From observation <em>to reconstruction.</em></h2></div><a class="text-link" href="assets/framework.pdf" target="_blank" rel="noopener">Open full-resolution figure <span aria-hidden="true">↗</span></a></div>
+      <figure class="framework-figure"><a href="assets/framework.pdf" target="_blank" rel="noopener" aria-label="Open framework as a full-resolution PDF"><img src="assets/framework.png" alt="Holi-Spatial 360 framework: LRM correspondence anchors, geometric optimization, generative trajectory densification, and automated spatial data curation." loading="lazy" width="2871" height="1464"></a><figcaption>Geometry provides the structure. Generative refinement fills in the views.</figcaption></figure>
+      <div class="method-steps"><div><span>01</span><h3>Anchor the geometry</h3><p>Build correspondence anchors from sparse panoramic observations.</p></div><div><span>02</span><h3>Densify the views</h3><p>Refine intermediate views with DiFix and Wan-VACE.</p></div><div><span>03</span><h3>Curate spatial data</h3><p>Connect rendered RGB and depth with 3D instances and spatial questions.</p></div></div>
+    </div></section>
+
+  </main>
+  <footer class="wrap"><a class="footer-brand" href="#top">Holi-Spatial <em>360.</em></a><p>Generative Reconstruction from Sparse Panoramas</p><a href="https://github.com/Visionary-Laboratory/Holi-spatial-360" target="_blank" rel="noopener noreferrer">Project repository ↗</a></footer>
+  <noscript><p class="noscript">Enable JavaScript for synchronized comparisons, or <a href="assets/videos/case01_realsee_12s/ours.mp4">open the result video directly</a>.</p></noscript>
+</body>
+</html>

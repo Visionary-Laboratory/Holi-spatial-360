@@ -1,0 +1,110 @@
+{
+  "source_archive": "four_cases_full_reference_panoramas.zip",
+  "display_note": "Two representative source panoramas per case; these examples are not a complete list of each method's inputs. Ziroom panoramas are the supplied reprojections of original cube faces.",
+  "images": [
+    {
+      "file": "assets/panoramas/case01_realsee_12s/pano16.jpg",
+      "source": "case01_realsee_12s/scene_00028/pano16.jpg",
+      "case": "case01_realsee_12s",
+      "scene": "scene_00028",
+      "panorama": "pano16",
+      "width": 1600,
+      "height": 800,
+      "sha256": "3e9a211143a4381066c85d276d9ce9e97bcf66828fbb515cac808a39d551e140",
+      "bytes": 321901,
+      "kind": "original_ERP_byte_copy",
+      "context": "Opening clip \u00b7 Scene 00028"
+    },
+    {
+      "file": "assets/panoramas/case01_realsee_12s/pano00.jpg",
+      "source": "case01_realsee_12s/scene_00028/pano00.jpg",
+      "case": "case01_realsee_12s",
+      "scene": "scene_00028",
+      "panorama": "pano00",
+      "width": 1600,
+      "height": 800,
+      "sha256": "05c9ded37ec49b82d14990bdba66393956e7f21a5c16b4a12db5296511d421e1",
+      "bytes": 326843,
+      "kind": "original_ERP_byte_copy",
+      "context": "Opening clip \u00b7 Scene 00028"
+    },
+    {
+      "file": "assets/panoramas/case02_ziroom_microwave/pano02.jpg",
+      "source": "case02_ziroom_microwave/ziroom_171955650923939807564/pano02.jpg",
+      "case": "case02_ziroom_microwave",
+      "scene": "ziroom_171955650923939807564",
+      "panorama": "pano02",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "76281859c2b6487b360b79f6185dc0a0aafbc2e2d3aa639be3c0a4f37a396f0d",
+      "bytes": 910051,
+      "kind": "reprojected_original_six_cube_faces",
+      "context": "Apartment route"
+    },
+    {
+      "file": "assets/panoramas/case02_ziroom_microwave/pano01.jpg",
+      "source": "case02_ziroom_microwave/ziroom_171955650923939807564/pano01.jpg",
+      "case": "case02_ziroom_microwave",
+      "scene": "ziroom_171955650923939807564",
+      "panorama": "pano01",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "ec9b049d8ad8132eeb110ba8234b2cd925f901f9f8a585d48fafb9d6ae8efed5",
+      "bytes": 1275695,
+      "kind": "reprojected_original_six_cube_faces",
+      "context": "Apartment route"
+    },
+    {
+      "file": "assets/panoramas/case03_realsee_scene00506_6s/pano10.jpg",
+      "source": "case03_realsee_scene00506_6s/scene_00506/pano10.jpg",
+      "case": "case03_realsee_scene00506_6s",
+      "scene": "scene_00506",
+      "panorama": "pano10",
+      "width": 1600,
+      "height": 800,
+      "sha256": "6e0836375d27a2920f6e77da0ae7edb281f17548a496bffe739e0697171cc35b",
+      "bytes": 418496,
+      "kind": "original_ERP_byte_copy",
+      "context": "Opening clip \u00b7 Scene 00506"
+    },
+    {
+      "file": "assets/panoramas/case03_realsee_scene00506_6s/pano11.jpg",
+      "source": "case03_realsee_scene00506_6s/scene_00506/pano11.jpg",
+      "case": "case03_realsee_scene00506_6s",
+      "scene": "scene_00506",
+      "panorama": "pano11",
+      "width": 1600,
+      "height": 800,
+      "sha256": "e288ae5560b3db6e2c53ff9d9c469b8862ec83f85c240fbf43a2735cc3012cba",
+      "bytes": 458854,
+      "kind": "original_ERP_byte_copy",
+      "context": "Opening clip \u00b7 Scene 00506"
+    },
+    {
+      "file": "assets/panoramas/case04_ziroom_20te_6s/pano10.jpg",
+      "source": "case04_ziroom_20te_6s/ziroom_20te2JAKYza/pano10.jpg",
+      "case": "case04_ziroom_20te_6s",
+      "scene": "ziroom_20te2JAKYza",
+      "panorama": "pano10",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "e01c3ded3cb40484e8ee975579c1d089ed952f59fa87be2a103d53ab76e59049",
+      "bytes": 1818126,
+      "kind": "reprojected_original_six_cube_faces",
+      "context": "Opening clip \u00b7 Bedroom"
+    },
+    {
+      "file": "assets/panoramas/case04_ziroom_20te_6s/pano11.jpg",
+      "source": "case04_ziroom_20te_6s/ziroom_20te2JAKYza/pano11.jpg",
+      "case": "case04_ziroom_20te_6s",
+      "scene": "ziroom_20te2JAKYza",
+      "panorama": "pano11",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "352ff591d78da6f0d9bcfcc780b505054e3a40cf08f3859d4748c31653dbb0b0",
+      "bytes": 1616250,
+      "kind": "reprojected_original_six_cube_faces",
+      "context": "Opening clip \u00b7 Bedroom"
+    }
+  ]
+}

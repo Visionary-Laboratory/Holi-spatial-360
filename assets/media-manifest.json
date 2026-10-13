@@ -1,0 +1,461 @@
+{
+  "source_archive": "four_cases_all_baselines.zip",
+  "videos": [
+    {
+      "file": "assets/videos/case01_realsee_12s/ours.mp4",
+      "source": "case01_realsee_12s/01_ours_difix_wan.mp4",
+      "sha256": "54df328316e5ffc749d939749ad2e68afc9ae028bcd439f009d1492a5534e1df",
+      "bytes": 2119230,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "135"
+      },
+      "duration": 9.0,
+      "source_sha256": "d67a2708fb8fd5d64deb1535ac243235476a791963b1daf2c94511a908da844f",
+      "edit": {
+        "removed_source_seconds": [
+          3,
+          6
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            45
+          ],
+          [
+            90,
+            180
+          ]
+        ],
+        "output_frames": 135,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994412
+      }
+    },
+    {
+      "file": "assets/videos/case01_realsee_12s/3dgs.mp4",
+      "source": "case01_realsee_12s/04_pure_3dgs.mp4",
+      "sha256": "79ca31fe4d4ed99cd900faa2fed8fbbeaae8e786ef02926f19b3cd0a72379ef1",
+      "bytes": 1744232,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "135"
+      },
+      "duration": 9.0,
+      "source_sha256": "2c350ae9aec2e8efd6e01ab201e7f386edec0c1179fc6f1681c5a04bf611ed59",
+      "edit": {
+        "removed_source_seconds": [
+          3,
+          6
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            45
+          ],
+          [
+            90,
+            180
+          ]
+        ],
+        "output_frames": 135,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994708
+      }
+    },
+    {
+      "file": "assets/videos/case01_realsee_12s/difix.mp4",
+      "source": "case01_realsee_12s/05_difix_official_on_pure_3dgs.mp4",
+      "sha256": "fa7c0ce4cf3a25b7434addfa2a7648dda2aaed4fcc8da9694eebc44fc458ccd6",
+      "bytes": 2217501,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "135"
+      },
+      "duration": 9.0,
+      "source_sha256": "7914fb3be53632e0340b6bcf6226c09ab850cf34e7368758b1d8c9ee60836e96",
+      "edit": {
+        "removed_source_seconds": [
+          3,
+          6
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            45
+          ],
+          [
+            90,
+            180
+          ]
+        ],
+        "output_frames": 135,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.995119
+      }
+    },
+    {
+      "file": "assets/videos/case01_realsee_12s/panoworld.mp4",
+      "source": "case01_realsee_12s/06_panoworld_official_lrm.mp4",
+      "sha256": "f0754a7192330c7cb5cb9a37ea8a5a97376b3bbde72e16d4064905a09e858a84",
+      "bytes": 1375929,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "135"
+      },
+      "duration": 9.0,
+      "source_sha256": "157dfbeb9eacae38fd8944a7c99cf8b885b25dd18f5ade22df06e5de4b27f84d",
+      "edit": {
+        "removed_source_seconds": [
+          3,
+          6
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            45
+          ],
+          [
+            90,
+            180
+          ]
+        ],
+        "output_frames": 135,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994816
+      }
+    },
+    {
+      "file": "assets/videos/case01_realsee_12s/artifixer.mp4",
+      "source": "case01_realsee_12s/07_artifixer_official_on_pure_3dgs.mp4",
+      "sha256": "fb42b3863fbd036b7418e26bc56ff61eca62d5b7d40814f09425b0306501509c",
+      "bytes": 1248184,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "135"
+      },
+      "duration": 9.0,
+      "source_sha256": "bc0cbb993b821f0f795656b41dc92a04028543340d706c9ab1b1ba49a70775cc",
+      "edit": {
+        "removed_source_seconds": [
+          3,
+          6
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            45
+          ],
+          [
+            90,
+            180
+          ]
+        ],
+        "output_frames": 135,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994422
+      }
+    },
+    {
+      "file": "assets/videos/case01_realsee_12s/gsfixer-repair.mp4",
+      "source": "gsfixer_postrender/case01_realsee_12s/01_gsfixer_repaired_on_pure3dgs.mp4",
+      "sha256": "93f60e8db0c98b4cf378d6ab2fada060176e633bf5fb20c85c8dd5c00879fd0d",
+      "bytes": 1591826,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "135"
+      },
+      "duration": 9.0,
+      "source_sha256": "8e92e6bced4cb7935b765550d4f12e24b564b5ef3ddd6e6afa05e12fe819d218",
+      "edit": {
+        "removed_source_seconds": [
+          3,
+          6
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            45
+          ],
+          [
+            90,
+            180
+          ]
+        ],
+        "output_frames": 135,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994378
+      }
+    },
+    {
+      "file": "assets/videos/case02_ziroom_microwave/ours.mp4",
+      "source": "case02_ziroom_microwave/01_ours_difix_wan_no_bbox.mp4",
+      "sha256": "e0bac373548370e5be2b291f25257389ba689543749770c01e3a5df7d5605c76",
+      "bytes": 902874,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "140"
+      },
+      "duration": 4.666016
+    },
+    {
+      "file": "assets/videos/case02_ziroom_microwave/3dgs.mp4",
+      "source": "case02_ziroom_microwave/04_pure_3dgs_rgb30k.mp4",
+      "sha256": "63efe8d26a70e254df850ea36ba478810f518236da7a1470567accfc5f7b1a0b",
+      "bytes": 1411382,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "140"
+      },
+      "duration": 4.666667
+    },
+    {
+      "file": "assets/videos/case02_ziroom_microwave/difix.mp4",
+      "source": "case02_ziroom_microwave/08_difix_official_on_pure_3dgs.mp4",
+      "sha256": "cc534a78914b39602966c373653834454d2ae72ac36a6238ef6c3f832948abad",
+      "bytes": 2047446,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "140"
+      },
+      "duration": 4.666016
+    },
+    {
+      "file": "assets/videos/case02_ziroom_microwave/panoworld.mp4",
+      "source": "case02_ziroom_microwave/07_panoworld_official_lrm.mp4",
+      "sha256": "1321afb3746ceff62c7f00d1845c6447f3e1009392d58525387e027c601616ad",
+      "bytes": 1341099,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "140"
+      },
+      "duration": 4.666667
+    },
+    {
+      "file": "assets/videos/case02_ziroom_microwave/artifixer.mp4",
+      "source": "case02_ziroom_microwave/05_artifixer_official_on_pure_3dgs.mp4",
+      "sha256": "7cab42fdcf6fe987a1b0cd979fe03cbc9da000403d677623182041e7e4fb2a77",
+      "bytes": 929380,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "140"
+      },
+      "duration": 4.666016
+    },
+    {
+      "file": "assets/videos/case02_ziroom_microwave/gsfixer-repair.mp4",
+      "source": "gsfixer_postrender/case02_ziroom_microwave/01_gsfixer_repaired_on_pure3dgs.mp4",
+      "sha256": "7454de6f5fdb24989508b5928460b1f0bfad026f49d9e0a61397a57c9a34c088",
+      "bytes": 1183120,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "140"
+      },
+      "duration": 4.666016
+    },
+    {
+      "file": "assets/videos/case03_realsee_scene00506_6s/ours.mp4",
+      "source": "case03_realsee_scene00506_6s/01_ours_difix_wan.mp4",
+      "sha256": "00373cc67417160a9cb15138c8a6432f151f15f327356f92b98135841e7cbd23",
+      "bytes": 2850743,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case03_realsee_scene00506_6s/3dgs.mp4",
+      "source": "case03_realsee_scene00506_6s/04_pure_3dgs.mp4",
+      "sha256": "70933c5ef8dc949e9a9123b8d1791d344d46dd6af7156d06d37b8ecda3a22753",
+      "bytes": 1442730,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case03_realsee_scene00506_6s/difix.mp4",
+      "source": "case03_realsee_scene00506_6s/05_difix_official_on_pure_3dgs.mp4",
+      "sha256": "845498b01d5106d7802feb1fd9b051ada647bd59d40b5e5a457fce00da673bc9",
+      "bytes": 2120299,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case03_realsee_scene00506_6s/panoworld.mp4",
+      "source": "case03_realsee_scene00506_6s/06_panoworld_official_lrm.mp4",
+      "sha256": "7b5bd24e1ce3101d2f0a7efe7fbb3d53a097475ef9e7e7ee588fe5f0dfd1e32a",
+      "bytes": 1603375,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case03_realsee_scene00506_6s/artifixer.mp4",
+      "source": "case03_realsee_scene00506_6s/07_artifixer_official_on_pure_3dgs.mp4",
+      "sha256": "3eb1756f5aa20c305e08d2cc5514b2901294aae6c3f815298083f3712e830060",
+      "bytes": 1571080,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case03_realsee_scene00506_6s/gsfixer-repair.mp4",
+      "source": "gsfixer_postrender/case03_realsee_scene00506_6s/01_gsfixer_repaired_on_pure3dgs.mp4",
+      "sha256": "60075e77841b4f94239f625e32fbbf58676063d70ce420384608d2ae3a515f9f",
+      "bytes": 2214170,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case04_ziroom_20te_6s/ours.mp4",
+      "source": "case04_ziroom_20te_6s/01_ours_difix_wan.mp4",
+      "sha256": "7fda8e5e50c23a3f0761b19d191050b45b376822372e1787ff2c7c52ecea5d1f",
+      "bytes": 2312099,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case04_ziroom_20te_6s/3dgs.mp4",
+      "source": "case04_ziroom_20te_6s/04_pure_3dgs.mp4",
+      "sha256": "f5b0902353d46793b4eedc4ae96ca77b1854b76df41153bd5dac7f32f6353fae",
+      "bytes": 1310354,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case04_ziroom_20te_6s/difix.mp4",
+      "source": "case04_ziroom_20te_6s/05_difix_official_on_pure_3dgs.mp4",
+      "sha256": "a7927637d51c4d6f7e2d42f9156d920cf1340bf83356a06b9a9c7fb0eae3099b",
+      "bytes": 2061096,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case04_ziroom_20te_6s/panoworld.mp4",
+      "source": "case04_ziroom_20te_6s/06_panoworld_official_lrm.mp4",
+      "sha256": "87b6ae4b9cb30cade492d0838846a04b7cdf4cdd56cc166ac3bc205346f06b79",
+      "bytes": 1630014,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case04_ziroom_20te_6s/artifixer.mp4",
+      "source": "case04_ziroom_20te_6s/07_artifixer_official_on_pure_3dgs.mp4",
+      "sha256": "2be16c0f68e4b2de07431f6d6eebdf4410f183695506b6d1a7392927d3b736ca",
+      "bytes": 1034124,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    },
+    {
+      "file": "assets/videos/case04_ziroom_20te_6s/gsfixer-repair.mp4",
+      "source": "gsfixer_postrender/case04_ziroom_20te_6s/01_gsfixer_repaired_on_pure3dgs.mp4",
+      "sha256": "fc28cc8c1ca3f608b03b0462e3d2e8243016b588d1b61ebd48dc50d37516d9ea",
+      "bytes": 1079186,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "15/1",
+        "nb_frames": "90"
+      },
+      "duration": 6.0
+    }
+  ]
+}
