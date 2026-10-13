@@ -182,6 +182,10 @@ async function loadComparison({ keepTime = false, autoPlay = false } = {}) {
   }
 }
 
+$('#arxiv-link').addEventListener('click', event => {
+  event.preventDefault();
+  window.location.reload();
+});
 playButton.addEventListener('click', () => playing ? pause() : play());
 $('#restart').addEventListener('click', () => {
   videos.forEach(video => { video.currentTime = 0; });
