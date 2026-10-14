@@ -9,13 +9,14 @@
   <link rel="icon" href="assets/site/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site/style.css">
   <script src="assets/site/app.js" defer></script>
+  <script src="assets/site/spatial.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#results">Skip to video comparisons</a>
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="Holi-Spatial 360 home"><span class="orbit" aria-hidden="true"><i></i></span>Holi-Spatial <span class="wordmark-degree">360</span></a>
     <nav aria-label="Main navigation">
-      <a href="#results">Results</a><a href="#framework">Framework</a>
+      <a href="#framework">Framework</a><a href="#results">Results</a>
       <a class="nav-repo" href="https://github.com/Visionary-Laboratory/Holi-spatial-360" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -29,8 +30,23 @@
       <div class="hero-rule"><span>RECONSTRUCT</span><i></i><span>RENDER</span><i></i><span>UNDERSTAND</span></div>
     </section>
 
+    <section class="teaser-section wrap section" id="teaser" aria-label="Project overview">
+      <figure class="project-figure">
+        <a href="assets/teaser.pdf" target="_blank" rel="noopener" aria-label="Open teaser as a full-resolution PDF"><img src="assets/teaser.png" alt="Holi-Spatial 360 overview: sparse panoramic inputs, multi-room reconstruction, trajectory densification, 3D object detection and grounding, rendered depth, and spatial reasoning." width="2800" height="1525" fetchpriority="high"></a>
+        <figcaption>Sparse panoramas are reconstructed into geometrically multi-room 3DGS, densified with image and video generative priors, and converted into RGB-D, 3D grounding, and spatial-reasoning supervision</figcaption>
+      </figure>
+    </section>
+
+    <section class="framework-section section" id="framework" aria-labelledby="framework-title"><div class="wrap">
+      <div class="section-top"><h2 id="framework-title" class="eyebrow">Framework</h2><a class="text-link" href="assets/framework.pdf" target="_blank" rel="noopener">Open full-resolution figure <span aria-hidden="true">↗</span></a></div>
+      <figure class="project-figure">
+        <a href="assets/framework.pdf" target="_blank" rel="noopener" aria-label="Open framework as a full-resolution PDF"><img src="assets/framework.png" alt="Holi-Spatial 360 framework: DA3 correspondence anchors for 3DGS optimization, generative trajectory densification with adapted DiFix and Wan-VACE, and verified spatial data curation." loading="lazy" width="2871" height="1464"></a>
+        <figcaption>DA3 correspondences anchor 3DGS optimization; adapted DiFix and Wan-VACE（1.3B） densify trajectories; verified RGB-D groundings yield 3D instances, captions, and spatial QA.</figcaption>
+      </figure>
+    </div></section>
+
     <section class="results wrap section" id="results" aria-labelledby="results-title">
-      <div class="section-top"><div><p class="eyebrow">01 / Visual results</p><h2 id="results-title">A closer look, <em>from every view.</em></h2></div><p class="section-intro">Explore four cases along matched camera paths.<br>Choose a baseline and compare in motion.</p></div>
+      <div class="section-top"><h2 id="results-title" class="eyebrow">01 / Visual results</h2><p class="section-intro">Explore four cases along matched camera paths.<br>Choose a baseline and compare in motion.</p></div>
       <div id="scene-tabs" class="scene-tabs" aria-label="Choose a video case">
         <button class="scene-tab active" type="button" data-case="0" aria-pressed="true"><img src="assets/posters/case01_realsee_12s/ours.jpg" alt="" width="72" height="72"><span><small>01 / REALSEE</small><strong>Indoor collection</strong><span class="scene-duration">3 clips · 9 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
         <button class="scene-tab" type="button" data-case="1" aria-pressed="false"><img src="assets/posters/case02_ziroom_microwave/ours.jpg" alt="" width="72" height="72"><span><small>02 / ZIROOM</small><strong>Apartment walkthrough</strong><span class="scene-duration">1 route · 4.67 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
@@ -70,11 +86,31 @@
       <details class="comparison-notes"><summary>About these comparisons <span>Qualitative results · matched cameras · different native inputs</span></summary><div class="notes-body"><p>These videos follow the same camera paths within each case. Native inputs, reference budgets, and training conditions differ across methods, so these are qualitative demonstrations rather than an equal-input benchmark.</p><p><strong>Baselines.</strong> Released DiFix and ArtiFixer operate on the independent, real-RGB-only 3DGS result. PanoWorld uses its own panorama-based reconstruction. GSFixer also operates on the independent 3DGS result.</p><p>The two panorama examples show representative source observations, not the full reference set for each method. Ziroom examples are the supplied full-panorama reprojections of the original cube faces.</p><p id="case-note"></p></div></details>
     </section>
 
-    <section class="framework-section section" id="framework" aria-labelledby="framework-title"><div class="wrap">
-      <div class="section-top"><div><p class="eyebrow">02 / The framework</p><h2 id="framework-title">From observation <em>to reconstruction.</em></h2></div><a class="text-link" href="assets/framework.pdf" target="_blank" rel="noopener">Open full-resolution figure <span aria-hidden="true">↗</span></a></div>
-      <figure class="framework-figure"><a href="assets/framework.pdf" target="_blank" rel="noopener" aria-label="Open framework as a full-resolution PDF"><img src="assets/framework.png" alt="Holi-Spatial 360 framework: LRM correspondence anchors, geometric optimization, generative trajectory densification, and automated spatial data curation." loading="lazy" width="2871" height="1464"></a><figcaption>Geometry provides the structure. Generative refinement fills in the views.</figcaption></figure>
-      <div class="method-steps"><div><span>01</span><h3>Anchor the geometry</h3><p>Build correspondence anchors from sparse panoramic observations.</p></div><div><span>02</span><h3>Densify the views</h3><p>Refine intermediate views with DiFix and Wan-VACE.</p></div><div><span>03</span><h3>Curate spatial data</h3><p>Connect rendered RGB and depth with 3D instances and spatial questions.</p></div></div>
-    </div></section>
+    <section class="spatial-section wrap section" id="spatial" aria-labelledby="spatial-title">
+      <div class="section-top">
+        <div><p class="eyebrow">02 / Spatial understanding</p><h2 id="spatial-title">3D bounding boxes <em>&amp; depth.</em></h2></div>
+        <div class="spatial-tabs" role="group" aria-label="Choose a spatial example">
+          <button type="button" class="spatial-tab active" data-spatial="1" aria-pressed="true" aria-label="Show spatial example 1"><img src="assets/spatial/example-1/bbox.jpg" width="96" height="64" loading="lazy" alt=""><span>01</span></button>
+          <button type="button" class="spatial-tab" data-spatial="2" aria-pressed="false" aria-label="Show spatial example 2"><img src="assets/spatial/example-2/bbox.jpg" width="96" height="64" loading="lazy" alt=""><span>02</span></button>
+          <button type="button" class="spatial-tab" data-spatial="3" aria-pressed="false" aria-label="Show spatial example 3"><img src="assets/spatial/example-3/bbox.jpg" width="96" height="64" loading="lazy" alt=""><span>03</span></button>
+        </div>
+      </div>
+      <div id="spatial-player" class="spatial-player" aria-label="Synchronized 3D bounding boxes and depth videos">
+        <div class="spatial-pair">
+          <figure><figcaption><span><i aria-hidden="true"></i> RGB + 3D boxes</span><span>Holi-Spatial 360</span></figcaption><video id="spatial-rgb" muted playsinline preload="none" poster="assets/spatial/example-1/bbox.jpg" aria-label="RGB video with 3D bounding boxes"></video></figure>
+          <figure><figcaption><span>Depth</span><span>0.15–8 m</span></figcaption><video id="spatial-depth" muted playsinline preload="none" poster="assets/spatial/example-1/depth.jpg" aria-label="Matching camera-Z depth video"></video></figure>
+          <div id="spatial-status" class="video-status" role="status" aria-live="polite" hidden></div>
+        </div>
+        <div class="playback-controls">
+          <button id="spatial-play" class="play-button" type="button" aria-label="Play spatial videos" disabled><span id="spatial-play-icon" aria-hidden="true">▶</span><span id="spatial-play-label">Play</span></button>
+          <button id="spatial-restart" class="icon-button" type="button" aria-label="Restart spatial videos" title="Restart videos" disabled>↺</button>
+          <span id="spatial-time" class="time">0:00</span><input id="spatial-timeline" class="timeline" type="range" min="0" max="1000" value="0" step="1" aria-label="Spatial video playback position" disabled><span id="spatial-duration" class="time">0:14</span>
+          <select id="spatial-speed" aria-label="Spatial playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select>
+          <button id="spatial-fullscreen" class="icon-button" type="button" aria-label="Full screen spatial videos" title="Full screen">⛶</button>
+        </div>
+      </div>
+      <p class="spatial-caption">Paired RGB and depth views along the same camera path. Depth is rendered from the underlying Gaussian geometry.</p>
+    </section>
 
   </main>
   <footer class="wrap"><a class="footer-brand" href="#top">Holi-Spatial <em>360.</em></a><p>Generative Reconstruction from Sparse Panoramas</p><a href="https://github.com/Visionary-Laboratory/Holi-spatial-360" target="_blank" rel="noopener noreferrer">Project repository ↗</a></footer>

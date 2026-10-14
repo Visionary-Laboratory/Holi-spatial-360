@@ -15,11 +15,17 @@ Open http://127.0.0.1:8765. The preview server supports byte-range requests for 
 - `index.html`: page content and sections.
 - `assets/site/style.css`: layout, colors, and responsive styles.
 - `assets/site/app.js`: case metadata, baseline labels, and synchronized playback.
+- `assets/site/spatial.js`: synchronized RGB-with-boxes and depth playback, with three thumbnail selectors.
+- `assets/teaser.pdf` and `assets/teaser.png`: supplied teaser and its 2800-pixel-wide preview. The original PDF is unchanged.
 - `assets/videos/`: comparison videos. The first collection is trimmed as described below; other cases are copied without transcoding.
 - `assets/posters/`: preview frames extracted at 0.5 seconds.
 - `assets/panoramas/`: two representative full panoramas per case, copied unchanged from `four_cases_full_reference_panoramas.zip`.
 - `assets/panorama-manifest.json`: selected panorama mappings, dimensions, and archive checksums.
 - `assets/media-manifest.json`: original archive paths, current checksums, media metadata, and edit records (including source checksums for edited videos).
+- `assets/spatial/`: three paired spatial examples and preview frames extracted at 1 second.
+- `assets/spatial-manifest.json`: spatial video archive mappings, checksums, and frame counts.
+
+The page opens with the title, teaser, and framework, followed by video comparisons and spatial examples. The teaser and framework each have a single caption; the previous three-step method cards are removed. Click either figure to open its original PDF.
 
 The source is `four_cases_all_baselines.zip`. The comparison includes our final output and five baselines. Our GS input and adapted DiFix intermediate outputs are excluded. GSFixer uses only the direct repair outputs. The four older GSFixer reconstruction videos are intentionally excluded from the page assets.
 
@@ -36,3 +42,9 @@ The original 12-second Realsee collection has its 3–6 second segment removed f
 ## Representative input panoramas
 
 Two images change with the selected case. They are illustrative source observations, not a complete or equal-budget list of model inputs. Multi-clip cases show references for the opening clip; case 1 uses scene 00028, avoiding the deleted scene 00791 segment. Click either image to open the full panorama. Realsee JPGs are original ERPs; Ziroom JPGs are the supplied reprojections of original cube faces.
+
+## Spatial examples
+
+The three examples come from `selected_00862_00924_00527_rgb_bbox_depth_refs.zip`. Each pairs the final refined RGB video with 3D boxes (`04_shuffled_difix_wan_bbox.mp4`) with its matching GS camera-Z depth (`06_shuffled_gs_depth.mp4`). The MP4s are copied without transcoding. Each pair has matching frame counts and 30 fps; example 3 has a sub-millisecond container-duration difference, so playback uses the shorter duration. Depth uses the supplied fixed reversed-TURBO scale from 0.15 to 8 meters, with invalid pixels black.
+
+Thumbnail buttons switch the paired videos without displaying dataset scene IDs. Shared controls handle playback, seeking, speed, restart, and full screen. Videos load when this section enters view. Starting either video section pauses the other. Open http://127.0.0.1:8765/#spatial to preview this section directly.

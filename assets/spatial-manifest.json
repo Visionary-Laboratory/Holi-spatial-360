@@ -1,0 +1,114 @@
+{
+  "source_archive": "selected_00862_00924_00527_rgb_bbox_depth_refs.zip",
+  "depth_description": "GS-rendered metric camera-Z depth before image/video refinement. Fixed reversed-TURBO scale, 0.15\u20138 m; invalid pixels black.",
+  "videos": [
+    {
+      "file": "assets/spatial/example-1/bbox.mp4",
+      "source": "samples/scene_00862/04_shuffled_difix_wan_bbox.mp4",
+      "sha256": "bbed026847d10b30b543e2fc0a0601fa1f644ca6c7069dbe368b408b84025a35",
+      "bytes": 6162720,
+      "frames": 449,
+      "fps": 30,
+      "example": 1,
+      "kind": "bbox",
+      "duration": 14.966667,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "449"
+      }
+    },
+    {
+      "file": "assets/spatial/example-1/depth.mp4",
+      "source": "samples/scene_00862/06_shuffled_gs_depth.mp4",
+      "sha256": "cb4552d1c67efcbdf32f23da3059bd0e824b6fc655a7b69356352d7ee02a2a99",
+      "bytes": 1548612,
+      "frames": 449,
+      "fps": 30,
+      "example": 1,
+      "kind": "depth",
+      "duration": 14.966667,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "449"
+      }
+    },
+    {
+      "file": "assets/spatial/example-2/bbox.mp4",
+      "source": "samples/scene_00924/04_shuffled_difix_wan_bbox.mp4",
+      "sha256": "31d393e76e73e95d834ca66d76b3ac46c4df20b1b6501420236d1a8beeb25ef8",
+      "bytes": 4526277,
+      "frames": 376,
+      "fps": 30,
+      "example": 2,
+      "kind": "bbox",
+      "duration": 12.533333,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "376"
+      }
+    },
+    {
+      "file": "assets/spatial/example-2/depth.mp4",
+      "source": "samples/scene_00924/06_shuffled_gs_depth.mp4",
+      "sha256": "f3bb59ba2f85874447d8e4ddcf6bf2a3ce24b8b02183dee59c8f31ea8f0d1f55",
+      "bytes": 1623375,
+      "frames": 376,
+      "fps": 30,
+      "example": 2,
+      "kind": "depth",
+      "duration": 12.533333,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "376"
+      }
+    },
+    {
+      "file": "assets/spatial/example-3/bbox.mp4",
+      "source": "samples/scene_00527/04_shuffled_difix_wan_bbox.mp4",
+      "sha256": "ed175ac0070e8339bbec8e5c52cfedd7c3b42378e974087a1d063b84d07e8dbd",
+      "bytes": 4769824,
+      "frames": 350,
+      "fps": 30,
+      "example": 3,
+      "kind": "bbox",
+      "duration": 11.666667,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "350"
+      }
+    },
+    {
+      "file": "assets/spatial/example-3/depth.mp4",
+      "source": "samples/scene_00527/06_shuffled_gs_depth.mp4",
+      "sha256": "4e6a5f286a96ad38a0fc39241950d05716edd216f863c8ce6450a537927f3778",
+      "bytes": 1338635,
+      "frames": 350,
+      "fps": 30,
+      "example": 3,
+      "kind": "depth",
+      "duration": 11.666016,
+      "video": {
+        "codec_name": "h264",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "350"
+      }
+    }
+  ]
+}

@@ -102,6 +102,7 @@ function pause() {
 }
 async function play() {
   if (!ready) return;
+  window.dispatchEvent(new CustomEvent('holi:playback', { detail: 'comparison' }));
   const version = ++actionVersion;
   automaticStartPending = false;
   if (ours.currentTime >= duration - 0.04) videos.forEach(video => { video.currentTime = 0; });
@@ -255,6 +256,12 @@ $('#fullscreen').addEventListener('click', async () => {
   } catch { setStatus('Full screen is unavailable in this browser.'); }
 });
 document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
+window.addEventListener('holi:playback', event => {
+  if (event.detail === 'comparison') return;
+  automaticStartPending = false;
+  resumeAfterLoad = false;
+  pause();
+});
 const observer = new IntersectionObserver(entries => {
   inView = entries[0].isIntersecting;
   if (!inView && playing) pause();
