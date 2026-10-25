@@ -53,3 +53,11 @@
 .framework-section .section-top{align-items:center;margin-bottom:20px}
 .framework-section .section-top .eyebrow{margin-bottom:0}
 @media(max-width:760px){.teaser-section{padding-top:8px;padding-bottom:30px}.project-figure figcaption{font-size:11px;line-height:1.8;margin-top:14px}.framework-section{padding-top:26px;padding-bottom:30px}.framework-section .section-top{display:flex;gap:15px;margin-bottom:17px}.framework-section .text-link{font-size:9px;margin-top:0}.project-figure>a{border-radius:5px}}
+
+/* A concise introduction before the teaser. */
+.project-intro{max-width:940px;padding-top:15px;padding-bottom:36px}
+.project-intro .eyebrow{margin-bottom:18px;color:var(--accent)}
+.project-intro p{font-size:15px;line-height:1.85;color:#5d6359;text-align:left}
+.project-intro p+p{margin-top:15px}
+.project-intro strong{font-weight:600;color:var(--ink)}
+@media(max-width:760px){.project-intro{padding-top:10px;padding-bottom:28px}.project-intro .eyebrow{margin-bottom:14px}.project-intro p{font-size:13px;line-height:1.85}.project-intro p+p{margin-top:13px}}

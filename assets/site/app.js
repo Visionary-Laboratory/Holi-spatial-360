@@ -5,10 +5,10 @@ const CASES = [
     panoramas: ['pano16', 'pano00'], referenceContext: 'Opening clip · Scene 00028',
     caption: 'Three indoor scenes. Cuts between the 3-second clips are intentional.',
     note: '<strong>Realsee collection.</strong> Three independent 3-second clips, 15 fps. These scenes are in the adapted DiFix training split; this collection is not a held-out evaluation.' },
-  { id: 'case02_ziroom_microwave', duration: 140 / 30, fps: 30,
+  { id: 'case02_ziroom_microwave', duration: 134 / 30, fps: 30,
     panoramas: ['pano02', 'pano01'], referenceContext: 'Apartment route',
-    caption: 'A 140-frame apartment route, from pano03 through pano02 to pano01.',
-    note: '<strong>Apartment walkthrough.</strong> A matched 140-frame camera route at 30 fps. GSFixer uses overlapping windows, so window transitions may remain visible.' },
+    caption: 'A 134-frame apartment route, from pano03 through pano02 toward pano01.',
+    note: '<strong>Apartment walkthrough.</strong> A matched 134-frame camera route at 30 fps. GSFixer uses overlapping windows, so window transitions may remain visible.' },
   { id: 'case03_realsee_scene00506_6s', duration: 6, fps: 15,
     panoramas: ['pano10', 'pano11'], referenceContext: 'Opening clip · Scene 00506',
     caption: 'Two views of a living space. The cut at 3 seconds is intentional.',
@@ -183,10 +183,6 @@ async function loadComparison({ keepTime = false, autoPlay = false } = {}) {
   }
 }
 
-$('#arxiv-link').addEventListener('click', event => {
-  event.preventDefault();
-  window.location.reload();
-});
 playButton.addEventListener('click', () => playing ? pause() : play());
 $('#restart').addEventListener('click', () => {
   videos.forEach(video => { video.currentTime = 0; });

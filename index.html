@@ -26,8 +26,15 @@
       <p class="eyebrow"><span class="tiny-orbit" aria-hidden="true">◉</span> From sparse panoramas to spatial worlds</p>
       <h1 id="project-title">Holi-Spatial <em>360</em><span class="title-dot">.</span></h1>
       <p class="paper-title">Generative Reconstruction from Sparse Panoramas<br class="desktop-break"> for Spatial Rendering and Intelligence</p>
-      <div class="hero-links"><a id="arxiv-link" class="button primary" href="">arXiv <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/Visionary-Laboratory/Holi-spatial-360" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-links"><a id="arxiv-link" class="button primary" href="https://arxiv.org/abs/2610.19502" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/Visionary-Laboratory/Holi-spatial-360" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
       <div class="hero-rule"><span>RECONSTRUCT</span><i></i><span>RENDER</span><i></i><span>UNDERSTAND</span></div>
+    </section>
+
+    <section class="project-intro wrap" id="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title" class="eyebrow">Overview</h2>
+      <p>Spatial intelligence needs realistic 3D environments with reliable geometry and object annotations. Yet most <strong>indoor datasets focus on single rooms and rely on costly LiDAR scans</strong>. Real-estate platforms offer abundant panoramas of diverse, multi-room homes, but reconstructing complete spaces from just a few viewpoints remains difficult.</p>
+      <p><strong>Holi-Spatial 360</strong> turns these sparse panoramas into annotated 3D environments. We first use correspondence-guided geometric optimization to align views into a coherent 3D Gaussian Splatting (3DGS) scene. Adapted <strong>image and video generative models</strong> then restore appearance and fill in camera trajectories while preserving observed content. RGB-D rendering, 3D grounding, and verification by vision-language models (VLMs) turn these scenes into training data for spatial reasoning.</p>
+      <p>The resulting <strong>Holi360</strong> dataset contains <strong>over 1K multi-room 3DGS scenes</strong>, <strong>more than 100K instance annotations</strong>, and <strong>2M spatial question-answer pairs</strong>. Our Holi360 benchmark evaluates spatial understanding in real homes, and fine-tuning VLMs on Holi360 improves their spatial reasoning.</p>
     </section>
 
     <section class="teaser-section wrap section" id="teaser" aria-label="Project overview">
@@ -49,7 +56,7 @@
       <div class="section-top"><h2 id="results-title" class="eyebrow">01 / Visual results</h2><p class="section-intro">Explore four cases along matched camera paths.<br>Choose a baseline and compare in motion.</p></div>
       <div id="scene-tabs" class="scene-tabs" aria-label="Choose a video case">
         <button class="scene-tab active" type="button" data-case="0" aria-pressed="true"><img src="assets/posters/case01_realsee_12s/ours.jpg" alt="" width="72" height="72"><span><small>01 / REALSEE</small><strong>Indoor collection</strong><span class="scene-duration">3 clips · 9 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
-        <button class="scene-tab" type="button" data-case="1" aria-pressed="false"><img src="assets/posters/case02_ziroom_microwave/ours.jpg" alt="" width="72" height="72"><span><small>02 / ZIROOM</small><strong>Apartment walkthrough</strong><span class="scene-duration">1 route · 4.67 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+        <button class="scene-tab" type="button" data-case="1" aria-pressed="false"><img src="assets/posters/case02_ziroom_microwave/ours.jpg" alt="" width="72" height="72"><span><small>02 / ZIROOM</small><strong>Apartment walkthrough</strong><span class="scene-duration">1 route · 4.47 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
         <button class="scene-tab" type="button" data-case="2" aria-pressed="false"><img src="assets/posters/case03_realsee_scene00506_6s/ours.jpg" alt="" width="72" height="72"><span><small>03 / REALSEE</small><strong>Living space</strong><span class="scene-duration">2 clips · 6 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
         <button class="scene-tab" type="button" data-case="3" aria-pressed="false"><img src="assets/posters/case04_ziroom_20te_6s/ours.jpg" alt="" width="72" height="72"><span><small>04 / ZIROOM</small><strong>Bedroom & passage</strong><span class="scene-duration">2 clips · 6 seconds</span></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
       </div>

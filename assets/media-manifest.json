@@ -208,86 +208,200 @@
     {
       "file": "assets/videos/case02_ziroom_microwave/ours.mp4",
       "source": "case02_ziroom_microwave/01_ours_difix_wan_no_bbox.mp4",
-      "sha256": "e0bac373548370e5be2b291f25257389ba689543749770c01e3a5df7d5605c76",
-      "bytes": 902874,
+      "sha256": "bca3c6a9775e6d1984eb4c3fc713ab35dec9eec9373de5cc51203728922522b4",
+      "bytes": 935249,
       "video": {
         "codec_name": "h264",
         "width": 512,
         "height": 512,
         "avg_frame_rate": "30/1",
-        "nb_frames": "140"
+        "nb_frames": "134"
       },
-      "duration": 4.666016
+      "duration": 4.466667,
+      "source_sha256": "e0bac373548370e5be2b291f25257389ba689543749770c01e3a5df7d5605c76",
+      "edit": {
+        "removed_tail_seconds": 0.2,
+        "removed_source_frame_ranges_half_open": [
+          [
+            134,
+            140
+          ]
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            134
+          ]
+        ],
+        "output_frames": 134,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.99423
+      }
     },
     {
       "file": "assets/videos/case02_ziroom_microwave/3dgs.mp4",
       "source": "case02_ziroom_microwave/04_pure_3dgs_rgb30k.mp4",
-      "sha256": "63efe8d26a70e254df850ea36ba478810f518236da7a1470567accfc5f7b1a0b",
-      "bytes": 1411382,
+      "sha256": "2e4dd491f8e08068869c5d8e1bb0fc41d0af2b332a681cb3320f5606777f7b22",
+      "bytes": 1234381,
       "video": {
         "codec_name": "h264",
         "width": 512,
         "height": 512,
         "avg_frame_rate": "30/1",
-        "nb_frames": "140"
+        "nb_frames": "134"
       },
-      "duration": 4.666667
+      "duration": 4.466667,
+      "source_sha256": "63efe8d26a70e254df850ea36ba478810f518236da7a1470567accfc5f7b1a0b",
+      "edit": {
+        "removed_tail_seconds": 0.2,
+        "removed_source_frame_ranges_half_open": [
+          [
+            134,
+            140
+          ]
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            134
+          ]
+        ],
+        "output_frames": 134,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994236
+      }
     },
     {
       "file": "assets/videos/case02_ziroom_microwave/difix.mp4",
       "source": "case02_ziroom_microwave/08_difix_official_on_pure_3dgs.mp4",
-      "sha256": "cc534a78914b39602966c373653834454d2ae72ac36a6238ef6c3f832948abad",
-      "bytes": 2047446,
+      "sha256": "9de182f825f6aa71cb1d89fc1e161991d9b24c0a6986d94f40723284cb618607",
+      "bytes": 1819236,
       "video": {
         "codec_name": "h264",
         "width": 512,
         "height": 512,
         "avg_frame_rate": "30/1",
-        "nb_frames": "140"
+        "nb_frames": "134"
       },
-      "duration": 4.666016
+      "duration": 4.466667,
+      "source_sha256": "cc534a78914b39602966c373653834454d2ae72ac36a6238ef6c3f832948abad",
+      "edit": {
+        "removed_tail_seconds": 0.2,
+        "removed_source_frame_ranges_half_open": [
+          [
+            134,
+            140
+          ]
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            134
+          ]
+        ],
+        "output_frames": 134,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994332
+      }
     },
     {
       "file": "assets/videos/case02_ziroom_microwave/panoworld.mp4",
       "source": "case02_ziroom_microwave/07_panoworld_official_lrm.mp4",
-      "sha256": "1321afb3746ceff62c7f00d1845c6447f3e1009392d58525387e027c601616ad",
-      "bytes": 1341099,
+      "sha256": "f7fe0b75d717a75d91e6b130af7cd2e9be75ffc674bc3e09a44baed5584fd2d2",
+      "bytes": 1192736,
       "video": {
         "codec_name": "h264",
         "width": 512,
         "height": 512,
         "avg_frame_rate": "30/1",
-        "nb_frames": "140"
+        "nb_frames": "134"
       },
-      "duration": 4.666667
+      "duration": 4.466667,
+      "source_sha256": "1321afb3746ceff62c7f00d1845c6447f3e1009392d58525387e027c601616ad",
+      "edit": {
+        "removed_tail_seconds": 0.2,
+        "removed_source_frame_ranges_half_open": [
+          [
+            134,
+            140
+          ]
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            134
+          ]
+        ],
+        "output_frames": 134,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.991359
+      }
     },
     {
       "file": "assets/videos/case02_ziroom_microwave/artifixer.mp4",
       "source": "case02_ziroom_microwave/05_artifixer_official_on_pure_3dgs.mp4",
-      "sha256": "7cab42fdcf6fe987a1b0cd979fe03cbc9da000403d677623182041e7e4fb2a77",
-      "bytes": 929380,
+      "sha256": "9854412a554c6b0d9ad22500e740a5bbb40489fb0b3a27f3ab159c426879d3fb",
+      "bytes": 813195,
       "video": {
         "codec_name": "h264",
         "width": 512,
         "height": 512,
         "avg_frame_rate": "30/1",
-        "nb_frames": "140"
+        "nb_frames": "134"
       },
-      "duration": 4.666016
+      "duration": 4.466667,
+      "source_sha256": "7cab42fdcf6fe987a1b0cd979fe03cbc9da000403d677623182041e7e4fb2a77",
+      "edit": {
+        "removed_tail_seconds": 0.2,
+        "removed_source_frame_ranges_half_open": [
+          [
+            134,
+            140
+          ]
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            134
+          ]
+        ],
+        "output_frames": 134,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994873
+      }
     },
     {
       "file": "assets/videos/case02_ziroom_microwave/gsfixer-repair.mp4",
       "source": "gsfixer_postrender/case02_ziroom_microwave/01_gsfixer_repaired_on_pure3dgs.mp4",
-      "sha256": "7454de6f5fdb24989508b5928460b1f0bfad026f49d9e0a61397a57c9a34c088",
-      "bytes": 1183120,
+      "sha256": "876aa8569aebd81f9d50c1a138e2ada8414c75aa41c31ee7b164a5e2fef2aae4",
+      "bytes": 1036376,
       "video": {
         "codec_name": "h264",
         "width": 512,
         "height": 512,
         "avg_frame_rate": "30/1",
-        "nb_frames": "140"
+        "nb_frames": "134"
       },
-      "duration": 4.666016
+      "duration": 4.466667,
+      "source_sha256": "7454de6f5fdb24989508b5928460b1f0bfad026f49d9e0a61397a57c9a34c088",
+      "edit": {
+        "removed_tail_seconds": 0.2,
+        "removed_source_frame_ranges_half_open": [
+          [
+            134,
+            140
+          ]
+        ],
+        "kept_source_frame_ranges_half_open": [
+          [
+            0,
+            134
+          ]
+        ],
+        "output_frames": 134,
+        "encoding": "H.264 High, yuv420p, CRF 16",
+        "ssim_vs_kept_source_frames": 0.994685
+      }
     },
     {
       "file": "assets/videos/case03_realsee_scene00506_6s/ours.mp4",
