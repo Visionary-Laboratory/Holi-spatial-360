@@ -208,8 +208,8 @@
     {
       "file": "assets/videos/case02_ziroom_microwave/ours.mp4",
       "source": "case02_ziroom_microwave/01_ours_difix_wan_no_bbox.mp4",
-      "sha256": "bca3c6a9775e6d1984eb4c3fc713ab35dec9eec9373de5cc51203728922522b4",
-      "bytes": 935249,
+      "sha256": "2149793aa7e0d3b05dd364b8451edb7a70d9c3f4b3faea5e1bd39b21e01a5142",
+      "bytes": 793923,
       "video": {
         "codec_name": "h264",
         "width": 512,
@@ -218,7 +218,7 @@
         "nb_frames": "134"
       },
       "duration": 4.466667,
-      "source_sha256": "e0bac373548370e5be2b291f25257389ba689543749770c01e3a5df7d5605c76",
+      "source_sha256": "fd217bb1794f97656ee48738fd72ed525a686af2c6761caf5053fd5f12ca0ea1",
       "edit": {
         "removed_tail_seconds": 0.2,
         "removed_source_frame_ranges_half_open": [
@@ -234,8 +234,12 @@
           ]
         ],
         "output_frames": 134,
-        "encoding": "H.264 High, yuv420p, CRF 16",
-        "ssim_vs_kept_source_frames": 0.99423
+        "encoding": "H.264, yuv420p"
+      },
+      "replacement": {
+        "date": "2026-11-09",
+        "version": "start-view table reference v4",
+        "source": "Remote fixed-reference Wan regeneration; same guide RGBD, trajectory, weights and seed; slot 2 replaced with original pano03_right"
       }
     },
     {
